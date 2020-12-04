@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Run `npm run mock:Server` for a api mock server. Navigate to `http://localhost:3000/agencies` to get list agencies
+Run `npm run mock:server` for a api mock server. Navigate to `http://localhost:3000/agencies` to get list agencies
 
 ## Code scaffolding
 
