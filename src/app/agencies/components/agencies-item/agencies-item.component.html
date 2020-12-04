@@ -1,0 +1,18 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="header-image">
+      <img src="https://material.angular.io/assets/img/examples/shiba1.jpg">
+    </div>
+    <mat-card-title>
+      <h3>{{agency.agencia}}</h3>
+      <h4>{{agency.departamento}}</h4>
+    </mat-card-title>
+    <mat-card-subtitle>{{agency.direccion}}</mat-card-subtitle>
+    <div fxFlex></div>
+    <mat-card-actions class="ml-auto">
+      <button mat-icon-button color="warn" [attr.aria-label]="agency.featured ? 'Favorito' : 'Agregar favorito'">
+        <mat-icon>{{ agency.featured ? 'star_rate' : 'star_border' }}</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card-header>
+</mat-card>

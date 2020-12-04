@@ -1,0 +1,28 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Agencias</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>search</mat-icon>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<div class="floating-button-action">
+  <button mat-fab color="warn" (click)="addAgency()">
+    <mat-icon>add</mat-icon>
+  </button>
+</div>
+
+<div class="container">
+  <div class="row">
+    <cdk-virtual-scroll-viewport itemSize="108" class="example-viewport">
+      <div *cdkVirtualFor="let agency of agencies" class="item">
+        <app-agencies-item
+          [agency]="agency"
+        ></app-agencies-item>
+      </div>
+    </cdk-virtual-scroll-viewport>
+
+  </div>
+</div>

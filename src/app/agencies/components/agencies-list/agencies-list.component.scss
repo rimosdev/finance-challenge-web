@@ -1,0 +1,19 @@
+.example-viewport{
+  height: calc(100vh - 56px);
+  width: 100%;
+  display: flex;
+}
+.item{
+  justify-content: center;
+  align-items: center;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+.floating-button-action {
+  position: fixed;
+  z-index: 1;
+  bottom: 20px;
+  right: 15px;
+}
